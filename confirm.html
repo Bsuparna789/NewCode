@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var pass = document.getElementById("pw").value;
+        var copass = document.getElementById("cpw").value;
+        if(pass==copass){
+            alert("password matched");
+            return true;
+        }
+        else{
+            alert("not matched");
+            return false;
+        }
+        }
+       
+    </script>
+</head>
+<body>
+    <form action="date.html" onsubmit="return add()">
+    Password : <input type="password" placeholder="enter password" id="pw"></br></br>
+    Co-password : <input type="password" placeholder="confirm password" id="cpw"></br></br>
+    <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   /* var student = new Map([["Name","ABC"],["age",21],["Marks",78],["dept","CSE"]]);
+    document.write(`${student}</br>`);
+    document.write(`${student.size}</br>`);
+    document.write(`${student.get("Name")}</br>`);
+    document.write(`${student.get("dept")}</br>`)
+    student.set("dept","EEE");
+    document.write(`${student.size}</br>`);
+    document.write(`${student.get("dept")}</br>`);
+
+    var c = student.delete("age");
+    document.write(`${student.size}</br>`);
+    document.write(`${student.get("age")}</br>`);
+
+    document.write(`${student.has("Marks")}</br>`);
+    document.write(`${student.has("age")}</br`);
+
+    var p = student.values();
+    document.write(`${p.next().value}</br>`);
+    document.write(`${p.next().value}</br>`);
+    document.write(`${p.next().value}</br>`);
+    document.write(`${p.next().value}</br>`);
+
+    var q= student.keys();
+    document.write(`${q.next().value}</br>`);
+    document.write(`${q.next().value}</br>`);
+    document.write(`${q.next().value}</br>`);
+    document.write(`${q.next().value}</br>`);
+
+    var s = student.entries();
+    document.write(`${s.next().value}</br>`);
+    document.write(`${s.next().value}</br>`);
+    document.write(`${s.next().value}</br>`);
+    document.write(`${s.next().value}</br>`);
+*/
+  var employee = new Map();
+  document.write(`${employee}</br>`);
+  employee.set("name","dinga");
+  employee.set("age",29);
+  employee.set("salary",45000);
+  employee.set("gender","male");
+  document.write(`${employee.size}</br>`)
+
+  document.write("----printing only keys------"+"</br>");
+  for(var a of employee.keys()){
+      document.write(`${a}</br>`)
+  }
+  
+  document.write("----printing only values------"+"</br>");
+  for(var b of employee.values()){
+      document.write(`${b}</br>`)
+  }
+  
+  document.write("----printing only entries------"+"</br>")
+  for(var c of employee.entries()){
+      document.write(`${c}</br>`)
+  }
+
+  employee.clear();
+  document.write(`${employee.size}</br>`)
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

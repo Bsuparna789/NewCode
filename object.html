@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function student(Name, age , gender){
+            this.Name = Name;
+            this.age = age;
+            this.gender = gender;
+        }
+
+        var s1 = new student("Dinga" , 20, "Male");
+        var b;
+        for(b in s1){
+            document.write(`${b} : ${s1[b]}</br>`)
+        }
+        
+        var s2 = new student("Dingi" , 21 , "Female");
+        var c;
+        for(c in s2){
+            document.write(`${c} : ${s2[c]}</br>`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

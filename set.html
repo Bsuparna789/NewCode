@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var student = new Set(["abc",22,78.9,"EEE"]);
+        document.write(`${student}</br>`);
+       /* document.write(`${student.size}</br>`);
+        student.add("Male");
+        document.write(`${student.size}</br>`);
+        student.add(1001);
+        document.write(`${student.size}</br>`);
+        document.write(`${student.delete("Male")}</br>`);
+        document.write(`${student.size}</br>`);
+        document.write(`${student.delete("xyz")}</br>`);
+        document.write(`${student.size}</br>`);*/
+        document.write(`${student.has("abc")}</br>`);
+        document.write(`${student.has("male")}</br>`);
+
+        var p = student.values();
+        document.write(`${p.next().value}</br>`);
+        document.write(`${p.next().value}</br>`);
+        document.write(`${p.next().value}</br>`);
+        document.write(`${p.next().value}</br>`);
+        document.write(`${p.next().value}</br>`);
+
+        document.write(`${student.size}</br>`);
+        student.clear();
+        document.write(`${student.size}</br>`);
+
+        
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     function valid(){
+         var user=document.getElementById("un").value;
+         var reg =/^[A-Z a-z]+$/;
+         var res = reg.test(user);
+         if(res){
+             alert("name accepted");
+             return true;
+         }
+         else{
+             document.getElementById("sp").innerHTML = "contains with letter"
+             return false;
+         }
+     }
+    </script>
+</head>
+<body>
+  <form action="date.html" onsubmit="return valid()">
+   Username : <input type="text" placeholder="enter your name" id="un"></br>
+   <span id="sp" style="color:crimson"></span></br>
+   <input type="submit">
+  </form>  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function valid(){
+        var user = document.getElementById("un");
+        var pass = document.getElementById("pw");
+        if(user.value.trim()=="" || pass.value.trim()==""){
+            alert("username or password should not be empty");
+            return false;
+        }
+        else{
+            alert("accepted");
+            return true;
+        }
+    }
+    </script>
+</head>
+<body>
+ <form action="progress.html" onsubmit="return valid()">
+  Username : <input type="text" placeholder="enter your name" id="un"></br></br>
+  Password : <input type="password" placeholder="enter your password" id="pw"></br>
+  <input type="submit">
+ </form>   
+</body>
+</html>

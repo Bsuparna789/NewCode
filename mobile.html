@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function add(){
+        var pass = document.getElementById("pw").value;
+        var reg = /^[A-Z a-z @]{8}$/;
+        if(!pass.match(reg)){
+        document.getElementById("sp").innerHTML="invalid number";
+        return false;
+        }
+        else{
+            alert("accepted");
+            return true;
+        }
+    }
+    </script>
+</head>
+<body>
+    <form onsubmit="return add()" action="map.html">
+    Password : <input type="text" placeholder="enter your password" id="pw"></br>
+    <span id="sp" style="color: red"></span></br>
+    <input type="submit">
+    </form>
+</body>
+</html>

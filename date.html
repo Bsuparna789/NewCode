@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function watch(){
+           var date = new Date();
+           var h = date.getHours();
+           var s = date.getSeconds();
+           var session = "AM";
+           if(h==0){
+               h = 12;
+           }
+           if (h>12){
+               h = h-12;
+               session = "PM"
+           }
+           var time = h + ":" + s + " " + session;
+           document.getElementById("i").innerHTML=time;
+       }
+       setInterval(watch,1000);
+        
+        
+    </script>
+</head>
+<body>
+  <h1 id="i"></h1>  
+</body>
+</html>

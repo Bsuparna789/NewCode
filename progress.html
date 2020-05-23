@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myprogress{
+            width: 100%;
+            background: gray;
+            margin:0px auto;
+        }
+        #mybar{
+            width:1%;
+            background: green;
+            color:white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="myprogress">
+    <div id="mybar">
+    <span id="increment">1%</span>
+    </div>
+    </div>
+</br>
+<button onclick="move()">Click Me</button>
+<script>
+    const move=()=>{
+    var elem = document.getElementById("mybar");
+    var width=1;
+    var id = setInterval(frame, 10);
+
+    function frame(){
+        if(width >=100){
+            clearInterval(id);
+        }
+
+        else{
+            width++;
+            elem.style.width = width + "%";
+            document.getElementById("increment").innerHTML = width + "%";
+        }
+    }
+    }
+</script>
+
+
+
+
+</body>
+</html>
